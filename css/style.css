@@ -1,0 +1,178 @@
+.hidden{position: absolute; left: -1000%; display: block; width: 1px; height: 1px; display: block; color:#fff; opacity: 0}
+.clearfix:after{clear: both; display: block; content: ''}
+
+#wrap{width: 100%; height: 100%; font-size: 16px; transition: 700ms}
+#content{width: 100%; overflow: hidden}
+
+#headerArea{position: fixed; display: none; width: 100%; height: 100px; background: rgba(0,0,0,.2); z-index: 10}
+#headerArea.show{display: block}
+#headerArea #gnb ul{font-size: 24px; text-align: center}
+#headerArea #gnb ul li{width: 20%; line-height: 4.2em; float: left}
+#headerArea #gnb ul li.on{position: relative}
+#headerArea #gnb ul li.on:after{position: absolute; left: 50%; margin-left: -40px; bottom: 25px; display: block; width: 80px; height: 2px; content: ''; background: #fff}
+#headerArea #gnb ul li a{display: block; color: #fff}
+
+#content .cmnSize, #content .portfolio{position: relative; width: 100%; height: 100%}
+
+#content .main{text-align: center}
+#content .main h3{position: relative; top: 20%}
+#content .main h3 img{width: 40%}
+#content .main .btn_pdf{position: relative; top: 25%; left: 50%; margin-left: -20%; display: block; width: 40%; height: auto; border: 4px solid #666; text-align: center}
+#content .main .btn_pdf:hover{border-color: #894dfa}
+#content .main .btn_pdf a{display: block}
+#content .main .btn_pdf img{width: 80%; padding: 2% 0}
+#content .main .scrollDown {position: absolute; bottom: 5%; left: 50%; width: 40px; margin-left: -20px; text-align: center}
+#content .main .scrollDown>a{display: block; height: 60px}
+#content .main .scrollDown .chevron {position: absolute; width: 35px; height: 4px; opacity: 0; transform: scale3d(0.5, 0.5, 0.5); animation: move 3s ease-out infinite}
+#content .main .scrollDown .chevron:first-child {animation: move 3s ease-out 1s infinite}
+#content .main .scrollDown .chevron:nth-child(2) {animation: move 3s ease-out 2s infinite}
+#content .main .scrollDown .chevron:before,
+#content .main .scrollDown .chevron:after {content: ' '; position: absolute; top: 0; height: 100%; width: 51%; background:#999}
+#content .main .scrollDown .chevron:before {left: 0; transform: skew(0deg, 30deg)}
+#content .main .scrollDown .chevron:after {right: 0; width: 50%; transform: skew(0deg, -30deg)}
+#content .main .scrollDown .text {display: block; font-size: 12px; color: #999; text-transform: uppercase; white-space: nowrap; animation: pulse 2s linear alternate infinite; text-align: center; margin-left: -25px;}
+@keyframes move {
+    25% {opacity: 1;}
+    33% {opacity: 1;transform: translateY(30px);}
+    67% {opacity: 1; transform: translateY(40px);}
+    100% {opacity: 0;  transform: translateY(55px) scale3d(0.5, 0.5, 0.5);}
+}
+
+#content .about{color: #fff; font-size: 18px; line-height: 1.3em; text-align: center}
+#content .about section{width: 42%; height: 100%; float: left; text-align: left; padding: 0 4%}
+#content .about .abtMenu{display: none}
+#content .about h4{position: relative; font-size: 3em; font-weight: bold; color: #fff; margin-top: 140px; margin-bottom: 80px}
+#content .about h4:after{position: absolute; bottom: -26px; display: block; width: 40px; border-bottom: 1px solid #fff; content: ''; padding-bottom: 20px}
+
+#content .about dt{font-size: 1.5em; font-weight: bold; line-height: 2em}
+#content .about .intro{background: #fb4d4e}
+#content .about .intro .myinfo {overflow: hidden; padding-bottom: 2%}
+#content .about .intro .myinfo dt, #content .about .intro .myinfo dd{float: left}
+#content .about .intro .myinfo dt{margin-right: 20px; font-size: 1.125em; font-weight: normal; line-height: 1.3em; opacity: .7; clear: both} 
+#content .about .intro dl{margin-top: 3%}
+#content .about .intro em{font-size: 1.125em; opacity: .7; margin-right: 20px}
+#content .about .intro p{line-height: 1.5em}
+#content .about .intro p:first-of-type{margin-top: 8%; padding-top: 8%; border-top: 1px dotted #efefef}
+#content .about .intro .myTag{padding-top: 2%; overflow: hidden}
+#content .about .intro .myTag li{display: inline-block; margin-right: 1%; background: #fd8282; padding: .2% .8%}
+#content .about .skill{background: #894dfa; color: #fefefe}
+#content .about .skill dl{margin-top: 5%}
+
+#content .portfolio section{position: relative; width: 1000px; height: 100%; margin: 0 auto}
+#content .portfolio:nth-child(2n+1){background-color: #efefef}
+#content .portfolio section>div{position: relative; bottom: 0; float: left; width: 50%; height: 100%; overflow: hidden}
+#content .portfolio section .colmnL{left: 0; width: 45%}
+#content .portfolio section .colmnR{right: 0; width: 55%}
+#content .portfolio section h4{position: absolute; font-style: italic; font-size: 2.250em; font-weight: bold; color: #b22c1b}
+#content .portfolio section dl{position: absolute; left: 5%; bottom: 20%}
+#content .portfolio section dt{position: relative; margin-top: 5%; font-size: 1.875em; font-weight: bold; line-height: 1.5em}
+#content .portfolio section dt:before{position: absolute; top: 15px; left: -25px; display: block; width: 15px; height: 15px; background: #b22c1b; content: ''}
+#content .portfolio section dd{font-size: 1.5em}
+#content .portfolio section a{position: absolute; bottom: 5%; display: inline-block; font-size: 1.875em; padding: .5em 2.5em; border: 1px solid #b22c1b; background: #fff; transition: 700ms; color: #b22c1b}
+#content .portfolio section a:hover{background: #b22c1b; color: #fff}
+#content .portfolio section img{position: absolute; bottom: 5%; width: 100%; height: auto}
+
+#content .desktop{background: url(../images/desktop.svg)}
+#content .desktop section h4{top: 350px; left: 50%; margin-left: -160px}
+
+#content .mobile{background: url(../images/mobile.svg)}
+#content .mobile section h4{top: 380px; left: 50%}
+
+#content .responsive section img, #content .wordpress section img{bottom: 12%}
+
+#content .responsive{background: url(../images/responsive.svg)}
+#content .responsive section h4{top: 350px; left: 50%; margin-left: -150px; color:#01aab4}
+#content .responsive section dt:before{background: #01aab4}
+#content .responsive section a{border: 1px solid #01aab4; color: #01aab4}
+#content .responsive section a:hover{background: #01aab4; color: #fff}
+
+#content .wordpress{background: url(../images/wordpress.svg)}
+#content .wordpress section h4{top: 350px; left: 50%; margin-left: 30px; color:#562ec2}
+#content .wordpress section dt:before{background: #562ec2}
+#content .wordpress section a{border: 1px solid #562ec2; color: #562ec2}
+#content .wordpress section a:hover{background: #562ec2}
+
+#content .portfolio {background-position: center 120px; background-repeat: no-repeat; background-size: auto 260px}
+/*#content .bgs{background-size: auto 200px, 35%}
+#content .bgsRe{background-size: auto 200px, 40%}*/
+
+
+@media screen and (max-width : 1100px){
+    #content .portfolio section{width: 100%}
+}
+
+/*
+
+
+
+@media screen and (max-width : 1700px){
+    #content .sec dl, #content .sec a{left:15%}
+    #content .sec{width: 75%; padding: 0 12.5%; background-position: center 120px, 78% 90%}
+    #content .bgs{background-size: auto 200px, 40%}
+    #content .bgsRe{background-size: auto 200px, 43%}
+}
+*/
+
+/*
+nj//
+@media screen and (max-width : 1200px){
+    #wrap{font-size: 14px}
+    
+    #content .about .intro .myTag{padding-top: 10%}
+    
+    #content .sec dl, #content .sec a{left:10%}
+    #content .sec{width: 80%; padding: 0 10%; background-position: center 120px, 78% 85%;background-attachment:local}
+    #content .sec a {bottom: 15%; font-size: 1.5em; padding: .5em 2em}
+    #content .sec dl{bottom: 35%}
+    
+    #content .bgs{background-size: auto 150px, 48%}
+    #content .bgsRe{background-size: auto 150px, 55%}
+    
+    #content .desktop h3{top: 250px}
+    #content .mobile h3{top: 270px; margin-left: -120px;}
+    #content .responsive h3 {top: 250px; margin-left: -50px}
+    #content .wordpress h3{top: 250px; margin-left: 80px}
+}*/
+
+/*@media screen and (max-width : 1200px){
+    #headerArea{height: 84px}
+    #headerArea #gnb ul{font-size: 20px}
+    
+    #content .main h3{position: relative; top: 30%}
+    #content .main h3 img{width: 50%}
+    #content .main .btn_pdf{position: relative; top: 35%; left: 50%; margin-left: -25%; display: block; width: 50%; height: auto; border: 4px solid #666; text-align: center}
+    
+    #content .sec{width: 90%; padding: 0 5%; background-position: center 100px, 90% 80%}
+    #content .sec h3{font-size: 2em}
+}
+@media screen and (max-width : 1024px)  {
+    #wrap{font-size: 13px}
+    
+    #content .sec{width: 96%; padding: 0 2%; background-position: center 100px, center 45%}
+    #content .sec dl{bottom: unset; left: 50%; margin-left: -20%; top: 61%}
+    #content .sec a{bottom: 5%; left: 50%; margin-left: -25%; padding: 1em 5em}
+    
+    #content .bgs{background-size: auto 120px, 45%}
+    #content .bgsRe{background-size: auto 120px, 55%}
+    
+    #content .desktop h3{top: 200px}
+    #content .mobile h3{top: 220px; margin-left: -110px}
+    #content .responsive h3 {top: 200px; margin-left: -30px}
+    #content .wordpress h3{top: 200px; margin-left:50px}
+    
+    @media screen and (max-height : 1024px){
+        #content .sec a{bottom: 3%; left: 50%; margin-left: -25%; padding: .7em 3em}
+        
+        #content .bgs{background-size: auto 120px, 40%}
+        #content .bgsRe{background-size: auto 120px, 50%}
+    }
+}*/
+/*@media screen and (max-width : 640px){
+    #wrap{font-size: 12px}
+    
+    #content .about h4{font-size: 1.8em}
+    #content .about dt{font-size: 1.2em}
+    #content .intro p, #content .intro ul{display: none}
+    #content .about .intro{width: 83%; padding: 0 1%}
+    #content .about .skill{width: 13%; padding: 0 1%}
+}*/
