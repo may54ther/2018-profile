@@ -60,119 +60,41 @@
 
 #content .portfolio section{position: relative; width: 1000px; height: 100%; margin: 0 auto}
 #content .portfolio:nth-child(2n+1){background-color: #efefef}
-#content .portfolio section>div{position: relative; bottom: 0; float: left; width: 50%; height: 100%; overflow: hidden}
-#content .portfolio section .colmnL{left: 0; width: 45%}
-#content .portfolio section .colmnR{right: 0; width: 55%}
+#content .portfolio section>div{position: relative; bottom: 0;  width: 50%; height: 100%; overflow: hidden}
+#content .portfolio section .colmnImg{float: right; width: 55%}
+#content .portfolio section .colmnTxt{float: left; width: 45%}
 #content .portfolio section h4{position: absolute; font-style: italic; font-size: 2.250em; font-weight: bold; color: #b22c1b}
 #content .portfolio section dl{position: absolute; left: 5%; bottom: 20%}
 #content .portfolio section dt{position: relative; margin-top: 5%; font-size: 1.875em; font-weight: bold; line-height: 1.5em}
 #content .portfolio section dt:before{position: absolute; top: 15px; left: -25px; display: block; width: 15px; height: 15px; background: #b22c1b; content: ''}
 #content .portfolio section dd{font-size: 1.5em}
-#content .portfolio section a{position: absolute; bottom: 5%; display: inline-block; font-size: 1.875em; padding: .5em 2.5em; border: 1px solid #b22c1b; background: #fff; transition: 700ms; color: #b22c1b}
+#content .portfolio section a{position: absolute; left: 0; bottom: 5%; display: inline-block; font-size: 1.875em; padding: .5em 2.5em; border: 1px solid #b22c1b; background: #fff; transition: 700ms; color: #b22c1b}
 #content .portfolio section a:hover{background: #b22c1b; color: #fff}
-#content .portfolio section img{position: absolute; bottom: 5%; width: 100%; height: auto}
+#content .portfolio section img{position: absolute; left: 0; bottom: 5%; width: 100%; height: auto}
 
 #content .desktop{background: url(../images/desktop.svg)}
-#content .desktop section h4{top: 350px; left: 50%; margin-left: -160px}
+#content .desktop section h4{top: 304px; left: 50%; margin-left: -150px}
 
 #content .mobile{background: url(../images/mobile.svg)}
-#content .mobile section h4{top: 380px; left: 50%}
+#content .mobile section h4{top: 334px; left: 50%; margin-left: -70px}
 
 #content .responsive section img, #content .wordpress section img{bottom: 12%}
 
 #content .responsive{background: url(../images/responsive.svg)}
-#content .responsive section h4{top: 350px; left: 50%; margin-left: -150px; color:#01aab4}
+#content .responsive section h4{top: 304px; left: 50%; margin-left: 65px; color:#01aab4}
 #content .responsive section dt:before{background: #01aab4}
 #content .responsive section a{border: 1px solid #01aab4; color: #01aab4}
 #content .responsive section a:hover{background: #01aab4; color: #fff}
 
 #content .wordpress{background: url(../images/wordpress.svg)}
-#content .wordpress section h4{top: 350px; left: 50%; margin-left: 30px; color:#562ec2}
+#content .wordpress section h4{top: 304px; left: 50%; margin-left: 160px; color:#562ec2}
 #content .wordpress section dt:before{background: #562ec2}
 #content .wordpress section a{border: 1px solid #562ec2; color: #562ec2}
 #content .wordpress section a:hover{background: #562ec2}
 
-#content .portfolio {background-position: center 120px; background-repeat: no-repeat; background-size: auto 260px}
-/*#content .bgs{background-size: auto 200px, 35%}
-#content .bgsRe{background-size: auto 200px, 40%}*/
-
+#content .portfolio {background-position: center 120px; background-repeat: no-repeat; background-size: auto 214px}
 
 @media screen and (max-width : 1100px){
-    #content .portfolio section{width: 100%}
-}
-
-/*
-
-
-
-@media screen and (max-width : 1700px){
-    #content .sec dl, #content .sec a{left:15%}
-    #content .sec{width: 75%; padding: 0 12.5%; background-position: center 120px, 78% 90%}
-    #content .bgs{background-size: auto 200px, 40%}
-    #content .bgsRe{background-size: auto 200px, 43%}
-}
-*/
-
-/*
-nj//
-@media screen and (max-width : 1200px){
     #wrap{font-size: 14px}
-    
-    #content .about .intro .myTag{padding-top: 10%}
-    
-    #content .sec dl, #content .sec a{left:10%}
-    #content .sec{width: 80%; padding: 0 10%; background-position: center 120px, 78% 85%;background-attachment:local}
-    #content .sec a {bottom: 15%; font-size: 1.5em; padding: .5em 2em}
-    #content .sec dl{bottom: 35%}
-    
-    #content .bgs{background-size: auto 150px, 48%}
-    #content .bgsRe{background-size: auto 150px, 55%}
-    
-    #content .desktop h3{top: 250px}
-    #content .mobile h3{top: 270px; margin-left: -120px;}
-    #content .responsive h3 {top: 250px; margin-left: -50px}
-    #content .wordpress h3{top: 250px; margin-left: 80px}
-}*/
-
-/*@media screen and (max-width : 1200px){
-    #headerArea{height: 84px}
-    #headerArea #gnb ul{font-size: 20px}
-    
-    #content .main h3{position: relative; top: 30%}
-    #content .main h3 img{width: 50%}
-    #content .main .btn_pdf{position: relative; top: 35%; left: 50%; margin-left: -25%; display: block; width: 50%; height: auto; border: 4px solid #666; text-align: center}
-    
-    #content .sec{width: 90%; padding: 0 5%; background-position: center 100px, 90% 80%}
-    #content .sec h3{font-size: 2em}
+    #content .portfolio section{width: 90%; margin: 0 5%}
 }
-@media screen and (max-width : 1024px)  {
-    #wrap{font-size: 13px}
-    
-    #content .sec{width: 96%; padding: 0 2%; background-position: center 100px, center 45%}
-    #content .sec dl{bottom: unset; left: 50%; margin-left: -20%; top: 61%}
-    #content .sec a{bottom: 5%; left: 50%; margin-left: -25%; padding: 1em 5em}
-    
-    #content .bgs{background-size: auto 120px, 45%}
-    #content .bgsRe{background-size: auto 120px, 55%}
-    
-    #content .desktop h3{top: 200px}
-    #content .mobile h3{top: 220px; margin-left: -110px}
-    #content .responsive h3 {top: 200px; margin-left: -30px}
-    #content .wordpress h3{top: 200px; margin-left:50px}
-    
-    @media screen and (max-height : 1024px){
-        #content .sec a{bottom: 3%; left: 50%; margin-left: -25%; padding: .7em 3em}
-        
-        #content .bgs{background-size: auto 120px, 40%}
-        #content .bgsRe{background-size: auto 120px, 50%}
-    }
-}*/
-/*@media screen and (max-width : 640px){
-    #wrap{font-size: 12px}
-    
-    #content .about h4{font-size: 1.8em}
-    #content .about dt{font-size: 1.2em}
-    #content .intro p, #content .intro ul{display: none}
-    #content .about .intro{width: 83%; padding: 0 1%}
-    #content .about .skill{width: 13%; padding: 0 1%}
-}*/
