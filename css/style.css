@@ -6,7 +6,7 @@
 #content section h3 .subTitle{position: absolute; right: 0; bottom: 0; display: inline-block; color: #333; font-size: 30px}
 #content section h3:after{display: block; width: 980px; height: 1px; content: ''}
 #content section .inner{width: 980px; height: auto; margin: 0 auto; padding: 0 60px}
-#content section .prj_left{float: left; width: calc(66% - 60px); height: 100%; margin-right: 60px;}
+#content section .prj_left{float: left; width: calc(66% - 60px); height: 100%; margin-right: 60px}
 #content section .prj_left img{width: 100%; margin-top: 20px}
 #content section .prj_right{position: relative; float: right; width: 34%; padding-top: 80px}
 #content section .prj_right dt{display: block; float: left; width: 15%; font-size: 20px; font-weight: bold}
