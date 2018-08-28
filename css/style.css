@@ -53,7 +53,7 @@
 #content .sec_skill h3:after{background: #fff}
 #content .sec_skill dl{width: 33.33%; float: left; color: #fff}
 #content .sec_skill dt{margin-top: 42px; margin-bottom: 12px; font-weight: 500; font-size: 28px}
-#content .sec_skill dd{line-height: 20px}
+#content .sec_skill dd{line-height: 20px; letter-spacing: -1px}
 
 #content .sec_prj2, #content .sec_prj4{background: #efefef}
 #content .sec_prj1 h3, #content .sec_prj2 h3{color: #b22c1b} 
