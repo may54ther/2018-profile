@@ -10,7 +10,6 @@
 #content section .prj_left img{width: 100%; margin-top: 20px}
 #content section .prj_right{position: relative; float: right; width: 34%; padding-top: 80px}
 #content section .prj_right dt{display: block; float: left; width: 12%; margin-right: 2%; font-size: 20px; font-weight: 500}
-#content section .prj_right dt:nth-of-type(-n+2){line-height: 36px}
 #content section .prj_right dd{display: block; float: left; width: 86%; font-size: 20px}
 #content section .prj_right dd:nth-of-type(-n+2){font-size: 24px}
 #content section .prj_right .btn_visit{display: block; width: 90%; margin-top: 20%; border: 1px solid #666; color:#666; line-height: 3em; text-align: center; transition: all .4s ease-in-out}
