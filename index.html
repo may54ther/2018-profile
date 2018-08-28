@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Ahyeon! Web Publisher</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            var nowYear = new Date();
+            var getData;
+            var age = ((nowYear.getFullYear()) - 1996) + 1;
+
+            getData  = ($('.date').html()) + ' ('+ age + '세)';
+        
+            $('.date').html(getData);
+        });
+    </script>
+   
+    <!--[if lt IE 9]> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
+</head>
+
+<body>
+
+    <div id="wrap">
+        <header id="headerArea">
+            <h1><a href="#">Ahyeon's Portfolio</a></h1>
+            <nav id="gnb">
+                <h2 class="hidden">글로벌네비게이션 영역</h2>
+                <ul>
+                    <li><a href="#profile">PROFILE</a></li>
+                    <li><a href="#desktop">DESKTOP</a></li>
+                    <li><a href="#mobile">MOBILE</a></li>
+                    <li><a href="#responsive">RESPONSIVE</a></li>
+                    <li><a href="#wordpresss">WORDPRESS</a></li>
+                    <!--<li><a href="javascript:void(0)">DESIGN</a></li>-->
+                </ul>
+            </nav>
+        </header>
+        <article id="content">
+            <h2 class="hidden">본문콘텐츠 영역</h2>
+            <section class="profile btn">
+                <h3 class="hidden">Profile</h3>
+                <div class="colorBox">
+                    
+                </div>
+                <dl>
+                    <dt><span>김아현</span> &#40;Kim Ahyeon&#41;</dt>
+                    <dd class="date">1996. 05. 04</dd>
+                    <dd>010 - 4507 - 2038</dd>
+                    <dd>aha9654@gmail.com</dd>
+                    <dd>정보처리산업기사</dd>
+                </dl>
+                <dl>
+                    <dt>Skill</dt>
+                    <dd>Photoshop, Illustrator</dd>
+                    <dd>HTML5, CSS3, JavaScript + JQuery</dd>
+                    <dd>PHP, MySQL, Oracle, Json, XML, Ajax, Java</dd>
+                    <dd>Wordpress, Responsive, Mobile Web, Android</dd>
+
+                </dl>
+                <dl>
+                    <dt>Education</dt>
+                    <dd>그린컴퓨터아트학원 ~ 2018.07</dd>
+                    <dd>동양미래대학교<br>컴퓨터소프트웨어공학과 ~ 2018.02</dd> 
+                    <dd>호평고등학교 ~ 2015.02</dd>
+                </dl>
+                <div class="btn_pdf"><a href="data/Ahyeon_Portfolio.pdf">View Portfolio_PDF →</a></div>
+            </section>
+            <section class="pcWeb btn">
+                <h3>Desktop<span>대명건설</span></h3>
+                <dl>
+                    <dt>Skill</dt>
+                    <dd>HTML5, CSS3, JavaScript &amp; jQuery</dd>
+                    <dd>PHP, MySQL, Json, Ajax</dd>
+                    <dt>Duration</dt>
+                    <dd>3 Weeks</dd>
+                    <dt>Checked</dt>
+                    <dd>K-WAH, W3C Validator</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/www">Visit Website →</a>
+            </section>
+            <section class="mbWeb btn">
+                <h3>Mobile<span>대명건설</span></h3>
+                <dl>
+                    <dt>Skill</dt>
+                    <dd>HTML5, CSS3, JavaScript &amp; jQuery</dd>
+                    <dd>PHP, MySQL, Json, Ajax</dd>
+                    <dt>Duration</dt>
+                    <dd>1 Weeks</dd>
+                    <dt>Checked</dt>
+                    <dd>K-WAH, W3C Validator</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/mobile">Visit Website →</a>
+            </section>
+            <section class="resWeb set btn">
+                <h3>Responsive<span>ELIE SAAB</span></h3>
+                <dl>
+                    <dt>Skill</dt>
+                    <dd>HTML5, CSS3, JavaScript &amp; jQuery</dd>
+                    <dt>Duration</dt>
+                    <dd>1 Weeks</dd>
+                    <dt>Checked</dt>
+                    <dd>K-WAH, W3C Validator</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/media">Visit Website →</a>
+            </section>
+            <section class="wpWeb set btn">
+                <h3>Wordpress<span>Tayeon Official</span></h3>
+                <dl>
+                    <dt>Skill</dt>
+                    <dd>HTML5, CSS3, CMS(Wordpress)</dd>
+                    <dt>Duration</dt>
+                    <dd>2 Days</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/wordpress">Visit Website →</a>
+            </section>
+            <!--<section class="design">
+                <h3 class="hidden">Design</h3>
+                <dl class="pos1">
+                    <dt>컴퓨터공학부학술대회 책자 표지</dt>
+                    <dd><img src="images/pos1.jpg" alt="표지 앞"></dd>
+                    <dd><img src="images/pos1_full.jpg" alt="표지 양면"></dd>
+                </dl>
+                <dl class="pos2">
+                    <dt>동문기술교류회 포스터 시안</dt>
+                    <dd><img src="images/pos2.jpg" alt="포스터1"></dd>
+                    <dd><img src="images/pos3.jpg" alt="포스터1"></dd>
+                    <dd><img src="images/pos4.jpg" alt="포스터1"></dd>
+                </dl>
+
+            </section>-->
+        </article>
+    </div>
+</body>
+
+</html>
