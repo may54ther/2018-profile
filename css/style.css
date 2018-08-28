@@ -1,0 +1,81 @@
+#wrap{width: 100%; height: auto; transition: 700ms}
+#content {width: 100%}
+#content section{position: relative; width: 100%}
+#content section[class*="sec_prj"]{height: 646px; padding: 60px 0}
+#content section h3{position: relative; width: 980px; margin: 0 auto 48px auto; font-size: 70px; font-weight: 500}
+#content section h3 .subTitle{position: absolute; right: 0; bottom: 0; display: inline-block; color: #333; font-size: 30px}
+#content section h3:after{display: block; width: 980px; height: 1px; content: ''}
+#content section .inner{width: 980px; height: auto; margin: 0 auto; padding: 0 60px}
+#content section .prj_left{float: left; width: calc(66% - 60px); height: 100%; margin-right: 60px;}
+#content section .prj_left img{width: 100%; margin-top: 20px}
+#content section .prj_right{position: relative; float: right; width: 34%; padding-top: 80px}
+#content section .prj_right dt{display: block; float: left; width: 12%; margin-right: 2%; font-size: 20px; font-weight: 500}
+#content section .prj_right dt:nth-of-type(-n+2){line-height: 36px}
+#content section .prj_right dd{display: block; float: left; width: 86%; font-size: 20px}
+#content section .prj_right dd:nth-of-type(-n+2){font-size: 24px}
+#content section .prj_right .btn_visit{display: block; width: 90%; margin-top: 20%; border: 1px solid #666; color:#666; line-height: 3em; text-align: center; transition: all .4s ease-in-out}
+#content section .prj_right .btn_visit:hover{background: #666; color: #fff}
+
+#headerArea{position: fixed; top: 60px; right: 60px; width: auto; height: 42px; z-index: 1; text-align: right}
+#headerArea .btn_menu{position: fixed; top: 60px; right: 60px;display: block; width: 48px; height: 42px; background: url(../img/ico_menu.png) no-repeat; transition: .6s; z-index: 100}
+#headerArea .btn_menu:hover{transform: rotate(180deg)}
+
+#headerArea #gnb{display: none; position: fixed; top: 0; left: 0;  width: 100%; height: 100%; background-color: #fff}
+#headerArea #gnb ul{position: absolute; top: 50%; left: 50%; width: 210px; margin-top: -350px; margin-left: -105px; text-align: center; font-size: 40px; line-height: 2.5em}
+#headerArea #gnb ul li{position: relative; transition: all .7s ease-in-out}
+#headerArea #gnb ul li:hover a{color: #ff5c36}
+#headerArea #gnb ul li:nth-child(1){letter-spacing: 18px}
+#headerArea #gnb ul li:nth-child(2){letter-spacing: 24px}
+#headerArea #gnb ul li:nth-child(n+3){font-size: 36px; letter-spacing: 3px}
+
+
+#content .sec_home{width: 100%; background: url(../img/img_main_back.jpg) center no-repeat; background-size: cover; text-align: center}
+#content .sec_home>img{margin-top: 320px; background-attachment: center; }
+#content .sec_home .btn_scroll{display: block; position: absolute; bottom: 20px; left: 50%; width: 25px; height: 85px; margin-left: -12px}
+#content .sec_home .btn_scroll img{width: 100%; height: 100%}
+
+#content .sec_about{height: 840px}
+#content .sec_about h3{color: #ff5c36; text-align: right}
+#content .sec_about h3:after{background: #ff5c36}
+#content .sec_about .about_left{padding-left: 20px; float: left; width: 360px; margin-top: 80px}
+#content .sec_about .about_left p{color: #666; text-align: center; font-size: 24px; margin-top: 30px; letter-spacing: -1px}
+#content .sec_about .about_left p strong{display: block; color: #ff5c36; font-size: 30px; line-height: 1.5em}
+#content .sec_about .about_right{padding-right: 20px; float: right; width: 490px; margin-top: 40px; color: #666; letter-spacing: -1px; font-weight: 200}
+#content .sec_about .about_right p{font-size: 18px}
+#content .sec_about .about_right .txt_info{margin-top: 20px; margin-bottom: 30px}
+#content .sec_about .about_right .box_myInfo{width: 412px; border: 1px solid #666; padding: 38px}
+#content .sec_about .about_right dl.list_info1{margin-bottom: 10px; padding-bottom: 10px; border-bottom : 1px solid #666}
+#content .sec_about .about_right dl dt{display: block; float: left; width: 12%; margin-right: 2%; font-size: 14px; font-weight: 500}
+#content .sec_about .about_right dl dd{display: block; float: left; width: 86%; font-size: 16px}
+#content .sec_about .about_right .btn_resume{display: block; width: 180px; margin-top: 30px; margin-left: 308px; color: #ff5c36; border: 1px solid #ff5c36; border-radius: 8px; padding: 13px 0; text-align: center; font-size: 14px; letter-spacing: 0; transition: all .4s ease-in-out}
+#content .sec_about .about_right .btn_resume:hover{background: #ff5c36; color: #fff}
+
+#content .sec_skill{height: auto; padding: 60px 0; background: url(../img/img_skill_back.png) no-repeat; background-size: cover}
+#content .sec_skill h3{color: #fff; text-align: right; margin-bottom: 0}
+#content .sec_skill h3:after{background: #fff}
+#content .sec_skill dl{width: 33.33%; float: left; color: #fff}
+#content .sec_skill dt{margin-top: 42px; margin-bottom: 12px; font-weight: 500; font-size: 28px}
+#content .sec_skill dd{line-height: 20px}
+
+#content .sec_prj2, #content .sec_prj4{background: #efefef}
+#content .sec_prj1 h3, #content .sec_prj2 h3{color: #b22c1b} 
+#content .sec_prj1 h3:after, #content .sec_prj2 h3:after{background: #b22c1b}
+#content .sec_prj3 .prj_left img, #content .sec_prj4 .prj_left img{margin-top: 130px} 
+#content .sec_prj3 .prj_right, #content .sec_prj4 .prj_right{padding-top: 140px}
+
+#content .sec_prj3 h3{color: #01aab4}
+#content .sec_prj3 h3:after{background: #01aab4}
+
+#content .sec_prj4 h3{color: #562ec2}
+#content .sec_prj4 h3:after{background: #562ec2}
+
+#content .sec_prj5 h3{color: #fa4d4d}
+#content .sec_prj5 h3:after{background: #fa4d4d}
+
+
+@media screen and (max-width : 1100px){
+    #content section h3{width: 100%}
+    #content section h3:after{ width: 100%}
+    #content section .inner{width: 100}
+
+}
