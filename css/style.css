@@ -72,8 +72,6 @@
 
 @media screen and (max-width : 1100px){
     #content .sec_home{width: 1100px}
-    #content section h3{width: 100%}
-    #content section h3:after{ width: 100%}
 }
 
 /*Main Size*/
