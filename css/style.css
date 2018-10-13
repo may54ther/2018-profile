@@ -4,7 +4,6 @@
 #content section[class*="sec_prj"]{height: 646px; padding: 60px 0}
 #content section h3{position: relative; width: 980px; margin: 0 auto 48px auto; font-size: 70px; font-weight: 500}
 #content section h3 .subTitle{position: absolute; right: 0; bottom: 0; display: inline-block; color: #333; font-size: 30px}
-#content section h3:after{display: block; width: 980px; height: 1px; content: ''}
 #content section .inner{width: 980px; height: auto; margin: 0 auto; padding: 0 60px}
 #content section .prj_left{float: left; width: 58%; height: 100%; margin-right: 8%}
 #content section .prj_left img{width: 100%; margin-top: 20px}
@@ -32,8 +31,7 @@
 #content .sec_home .btn_scroll img{width: 100%; height: 100%}
 
 #content .sec_about{height: 840px}
-#content .sec_about h3{color: #ff5c36; text-align: right}
-#content .sec_about h3:after{background: #ff5c36}
+#content .sec_about h3{color: #ff5c36; text-align: right; border-bottom: 1px solid #ff5c36}
 #content .sec_about .about_left{padding-left: 20px; float: left; width: 360px; margin-top: 80px}
 #content .sec_about .about_left p{color: #666; text-align: center; font-size: 24px; margin-top: 30px; letter-spacing: -1px}
 #content .sec_about .about_left p strong{display: block; color: #ff5c36; font-size: 30px; line-height: 1.5em}
@@ -56,19 +54,13 @@
 #content .sec_skill dd{line-height: 20px; letter-spacing: -1px}
 
 #content .sec_prj2, #content .sec_prj4{background: #efefef}
-#content .sec_prj1 h3, #content .sec_prj2 h3{color: #b22c1b} 
-#content .sec_prj1 h3:after, #content .sec_prj2 h3:after{background: #b22c1b}
+#content .sec_prj1 h3, #content .sec_prj2 h3{color: #b22c1b; border-bottom: 1px solid #b22c1b}
 #content .sec_prj3 .prj_left img, #content .sec_prj4 .prj_left img{margin-top: 130px} 
 #content .sec_prj3 .prj_right, #content .sec_prj4 .prj_right{padding-top: 140px}
 
-#content .sec_prj3 h3{color: #01aab4}
-#content .sec_prj3 h3:after{background: #01aab4}
-
-#content .sec_prj4 h3{color: #562ec2}
-#content .sec_prj4 h3:after{background: #562ec2}
-
-#content .sec_prj5 h3{color: #fa4d4d}
-#content .sec_prj5 h3:after{background: #fa4d4d}
+#content .sec_prj3 h3{color: #01aab4; border-bottom: 1px solid #01aab4}
+#content .sec_prj4 h3{color: #562ec2; border-bottom: 1px solid #562ec2}
+#content .sec_prj5 h3{color: #fa4d4d; border-bottom: 1px solid #fa4d4d}
 
 
 @media screen and (max-width : 1100px){
