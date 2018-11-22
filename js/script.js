@@ -57,4 +57,17 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('.pagination a').click(function (e) {
+        e.preventDefault();
+
+        var idx = $(this).parent().index();
+        $(this).parent().addClass('on').siblings().removeClass('on');
+        
+        if (idx == 0) {
+            $('.event').hide().siblings('.cabal').fadeIn();
+        } else {
+            $('.cabal').hide().siblings('.event').fadeIn();
+        }
+    });
 });

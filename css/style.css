@@ -48,7 +48,6 @@
 
 #content .sec_skill{height: auto; padding: 60px 0; background: url(../img/img_skill_back.png) no-repeat; background-size: cover}
 #content .sec_skill h3{color: #fff; text-align: right; margin-bottom: 0; border-bottom: 1px solid #fff}
-#content .sec_skill h3:after{background: #fff}
 #content .sec_skill dl{width: 33.33%; float: left; color: #fff}
 #content .sec_skill dt{margin-top: 42px; margin-bottom: 12px; font-weight: 500; font-size: 28px}
 #content .sec_skill dd{line-height: 20px; letter-spacing: -1px}
@@ -61,7 +60,12 @@
 #content .sec_prj3 h3{color: #01aab4; border-bottom: 1px solid #01aab4}
 #content .sec_prj4 h3{color: #562ec2; border-bottom: 1px solid #562ec2}
 #content .sec_prj5 h3{color: #fa4d4d; border-bottom: 1px solid #fa4d4d}
-
+#content .sec_prj5 .event{display: none}
+#content .sec_prj5 .pagination {position: absolute; left: 50%; bottom: 30px; margin-left: -21px}
+#content .sec_prj5 .pagination li{float: left}
+#content .sec_prj5 .pagination li.p1{margin-right: 10px}
+#content .sec_prj5 .pagination li a{display: block; width: 14px; height: 14px; border: 1px solid #fa4d4d; border-radius: 50%}
+#content .sec_prj5 .pagination li.on a{ background: #fa4d4d;}
 
 @media screen and (max-width : 1100px){
     #content .sec_home{width: 1100px}
