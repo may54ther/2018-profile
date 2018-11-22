@@ -14,7 +14,7 @@
 #content section .prj_right .btn_visit:hover{background: #666; color: #fff}
 
 #headerArea{position: fixed; top: 60px; right: 60px; width: auto; height: 42px; z-index: 1; text-align: right}
-#headerArea .btn_menu{position: fixed; top: 60px; right: 60px;display: block; width: 48px; height: 42px; background: url(../img/ico_menu.png) no-repeat; transition: .6s; z-index: 100}
+#headerArea .btn_menu{position: fixed; top: 60px; right: 60px;display: block; width: 47px; height: 42px; background: url(../img/ico_menu.png) no-repeat; transition: .6s; z-index: 100}
 #headerArea .btn_menu:hover{transform: rotate(180deg)}
 
 #headerArea #gnb{display: none; position: fixed; top: 0; left: 0;  width: 100%; height: 100%; background-color: #fff}
@@ -64,8 +64,8 @@
 #content .sec_prj5 .pagination {position: absolute; left: 50%; bottom: 30px; margin-left: -21px}
 #content .sec_prj5 .pagination li{float: left}
 #content .sec_prj5 .pagination li.p1{margin-right: 10px}
-#content .sec_prj5 .pagination li a{display: block; width: 14px; height: 14px; border: 1px solid #fa4d4d; border-radius: 50%}
-#content .sec_prj5 .pagination li.on a{ background: #fa4d4d;}
+#content .sec_prj5 .pagination li a{display: block; width: 17px; height: 17px; background: url(../img/spr_btn_page.png) no-repeat; background-position: -25px 1px}
+#content .sec_prj5 .pagination li.on a{background-position: 1px 1px}
 
 @media screen and (max-width : 1100px){
     #content .sec_home{width: 1100px}
