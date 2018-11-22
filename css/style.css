@@ -47,7 +47,7 @@
 #content .sec_about .about_right .btn_resume:hover{background: #ff5c36; color: #fff}
 
 #content .sec_skill{height: auto; padding: 60px 0; background: url(../img/img_skill_back.png) no-repeat; background-size: cover}
-#content .sec_skill h3{color: #fff; text-align: right; margin-bottom: 0}
+#content .sec_skill h3{color: #fff; text-align: right; margin-bottom: 0; border-bottom: 1px solid #fff}
 #content .sec_skill h3:after{background: #fff}
 #content .sec_skill dl{width: 33.33%; float: left; color: #fff}
 #content .sec_skill dt{margin-top: 42px; margin-bottom: 12px; font-weight: 500; font-size: 28px}
