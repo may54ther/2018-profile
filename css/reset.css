@@ -20,7 +20,7 @@ body{font-family: 'Noto Sans KR', '맑은 고딕', Dotum, "굴림", Gulim, sans-
 ol, ul{list-style: none;}
 table{border-collapse: collapse; border-spacing: 0;}
 address{font-style: normal}
-textarea{font-family: inherit; font-size: inherit; resize: none}
+textarea{font-family: inherit; font-size: inherit; resize: none;}
 img{border: 0; vertical-align: top}
 a{color:#333; text-decoration: none}
 a:hover{color:#333; text-decoration: none}
