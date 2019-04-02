@@ -1,305 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Web Publisher, Aha:D</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png" />
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="js/jquery-1.8.3.min.js"></script>
     <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/script.js"></script>
     <script>
-        $(document).ready(function() {
-            var nowYear = new Date();
-            var getData;
-            var age = ((nowYear.getFullYear()) - 1996) + 1;
+      $(document).ready(function() {
+        var nowYear = new Date();
+        var getData;
+        var age = nowYear.getFullYear() - 1996 + 1;
 
-            getData = ($('.date').html()) + age + '세 ';
+        getData = $(".date").html() + age + "세 ";
 
-            $('.date').html(getData);
-        });
+        $(".date").html(getData);
+      });
 
-        // <![CDATA[
-        try {
-            window.addEventListener('load', function() {
-                setTimeout(scrollTo, 0, 0, 1);
-            }, false);
-        } catch (e) {}
-        // ]]>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          "load",
+          function() {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      // ]]>
     </script>
-    <!--[if lt IE 9]> 
-        <script src="js/html5shiv.js"></script>
-        <script src="js/css3-mediaqueries.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/css3-mediaqueries.min.js"></script>
     <![endif]-->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- <div class="skipNav">
+      //skipNav
+    </div> -->
+    <div class="wrap">
+      <header class="header">
+        <h1 class="header__title">
+          <!-- <span class="title__txt1">WEB PUBLISHER</span> -->
+          <span class="title__txt1">Ahyeon Kim's</span>
+          <span class="title__txt2">PORTFOLIO</span>
+        </h1>
 
-    <div id="skipNav">
-        <!--skipNav-->
+        <a href="#" class="button__scroll-down">
+          <span class="blind">스크롤 다운</span>
+        </a>
+
+        <a href="javascript:void(0)" class="header__menu">
+          <span class="blind">메뉴</span>
+        </a>
+
+        <nav class="header__navigation">
+          <h2 class="blind">글로벌네비게이션 영역</h2>
+
+          <ul class="clearfix">
+            <li>
+              <h3><a href="javascript:void(0)">About</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Skill</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Project01</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Project02</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Project03</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Project04</a></h3>
+            </li>
+            <li>
+              <h3><a href="javascript:void(0)">Project05</a></h3>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <section>
+          <h2 class="blind">본문콘텐츠 영역</h2>
+          <section class="sec_about sec1">
+            <h3>About</h3>
+
+            <div class="inner clearfix">
+              <div class="inner--about-left">
+                <img src="img/img_about.png" alt />
+                <p>Web Publisher, <strong>Ahyeon Kim.</strong></p>
+              </div>
+              <div class="inner--about-right">
+                <p>안녕하세요 :&#41;</p>
+                <p>신입 웹 퍼블리셔 <strong>김 아현</strong>입니다.</p>
+                <p class="txt_info">언제나 즐거운 마음으로 끊임없이 도전하고, <br />열정이 넘치는 퍼블리셔가 되겠습니다.</p>
+
+                <div class="box_myInfo">
+                  <dl class="list_info1 clearfix">
+                    <dt>Birth.</dt>
+                    <dd>1996.05.04 &#40;23세&#41;</dd>
+                    <dt>Call.</dt>
+                    <dd>010. 4507. 2038</dd>
+                    <dt>Email.</dt>
+                    <dd>aha9654@gmail.com</dd>
+                  </dl>
+                  <dl class="list_info2 clearfix">
+                    <dt>2018.02</dt>
+                    <dd>동양미래대학교 컴퓨터소프트웨어공학과 졸업</dd>
+                    <dt>2018.05</dt>
+                    <dd>정보처리산업기사 취득</dd>
+                    <dt>2018.07</dt>
+                    <dd>그린컴퓨터아카데미 디지털컨버전스 정규과정 수료</dd>
+                  </dl>
+                </div>
+
+                <a href="data/AhyeonKim_Portfolio.pdf" class="btn_resume" target="_blank" title="새창으로 열림">Download Resume ></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec_skill sec2">
+            <h3>Skill</h3>
+
+            <div class="inner clearfix">
+              <dl>
+                <dt>HTML</dt>
+                <dd>웹 접근성과 웹표준을 준수하는 하드코딩</dd>
+                <dd>시맨틱 태그를 활용한 시맨틱한 아웃라인 구조</dd>
+              </dl>
+              <dl>
+                <dt>CSS</dt>
+                <dd>미디어쿼리를 이용한 반응형 사이트 제작</dd>
+                <dd>모바일 전용 사이트 제작 &#40;디바이스별 호환&#41;</dd>
+              </dl>
+              <dl>
+                <dt>JS, JQuery</dt>
+                <dd>Form 값 유효성 체크</dd>
+                <dd>탭, 슬라이드 등의 기능 구현 및 플러그인 사용</dd>
+              </dl>
+              <dl>
+                <dt>Photoshop</dt>
+                <dd>이미지 누끼따기, 레이아웃 자르기</dd>
+                <dd>간단한 이미지 보정/수정/합성</dd>
+              </dl>
+              <dl>
+                <dt>Database</dt>
+                <dd>DBMS에서 데이터 생성·조작</dd>
+              </dl>
+              <dl>
+                <dt>Git</dt>
+                <dd>Azure, github등에서 사용한 경험이 있으며 기본적인 기능 모두 사용가능합니다.</dd>
+              </dl>
+            </div>
+          </section>
+          <section class="sec_project1 sec3">
+            <h3>Project01<span class="blind"> - </span><span class="subTitle">기업형 홈페이지 제작</span></h3>
+
+            <div class="inner clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_01.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>대명건설</dd>
+                  <dt>기간</dt>
+                  <dd>3주</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JS + JQuery / PHP / MySQL / Ajax / Json</dd>
+                  <dt>설명</dt>
+                  <dd>1000px를 기준으로 작업한 Desktop전용 기업 사이트입니다.</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/www" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec_project2 sec4">
+            <h3>Project02<span class="blind"> - </span><span class="subTitle">모바일 홈페이지 제작</span></h3>
+
+            <div class="inner clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_02.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>대명건설</dd>
+                  <dt>기간</dt>
+                  <dd>1주</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JS + JQuery / PHP / MySQL / Json</dd>
+                  <dt>설명</dt>
+                  <dd>모바일전용으로 제작한 기업 사이트입니다.</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/mobile" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec_project3 sec5">
+            <h3>Project03<span class="blind"> - </span><span class="subTitle">반응형 홈페이지 제작</span></h3>
+
+            <div class="inner clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_03.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>ELIE SAAB</dd>
+                  <dt>기간</dt>
+                  <dd>1주</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JQuery</dd>
+                  <dt>설명</dt>
+                  <dd>CSS Media Query를 사용해 만든 반응형 사이트입니다.</dd>
+                </dl>
+                <a href="https://may54ther.github.io/media" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec_project4 sec6">
+            <h3>Project04<span class="blind"> - </span><span class="subTitle">워드프레스 홈페이지 제작</span></h3>
+
+            <div class="inner clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_04.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>태연 Official</dd>
+                  <dt>기간</dt>
+                  <dd>2일</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JQuery / CMS(Wordpres)</dd>
+                  <dt>설명</dt>
+                  <dd>Wordpress의 Avata테마를 사용해 만든 반응형 사이트입니다.</dd>
+                </dl>
+                <a href="http://may54ther.cafe24.com/wordpress" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+          </section>
+          <section class="sec_project5 sec7">
+            <h3>Project05<span class="blind"> - </span><span class="subTitle">기존 홈페이지 Copy Site</span></h3>
+
+            <div class="inner cabal clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_05.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>카발온라인 &#40;ESTGames&#41;</dd>
+                  <dt>기간</dt>
+                  <dd>4일</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JQuery / Json</dd>
+                  <dt>설명</dt>
+                  <dd>
+                    플러그인을 사용하지 않고 직접 구현하였으며, 기존 div 구조의 사이트를 시맨틱 태그를 사용해 Outline 구조를 고려하여 만들었습니다.
+                  </dd>
+                </dl>
+                <a href="https://may54ther.github.io/cabal_online" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+            <div class="inner event clearfix">
+              <div class="inner--left">
+                <img src="img/img_prj_06.png" alt="미리보기" />
+              </div>
+              <div class="inner--right">
+                <dl class="clearfix">
+                  <dt>주제</dt>
+                  <dd>카발온라인 EVENT</dd>
+                  <dt>기간</dt>
+                  <dd>1일</dd>
+                  <dt>스킬</dt>
+                  <dd>HTML5 / CSS3 / JQuery</dd>
+                  <dt>설명</dt>
+                  <dd>IE7이상의 크로스브라우징에 대응하며, 시맨틱 태그를 사용해 Outline 구조를 고려하여 만들었습니다.</dd>
+                </dl>
+                <a href="https://may54ther.github.io/cabal_event" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
+              </div>
+            </div>
+            <ul class="pagination">
+              <li class="p1 on">
+                <a href="#"><span class="blind">1</span></a>
+              </li>
+              <li class="p2">
+                <a href="#"><span class="blind">2</span></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
     </div>
-    <div id="wrap">
-        <header id="headerArea">
-            <h1 class="blind"><a href="#">웹 퍼블리셔, 김아현</a></h1>
-
-            <a href="javascript:void(0)" class="btn_menu">
-                    <span class="blind">메뉴</span>
-            </a>
-
-            <nav id="gnb">
-                <h2 class="blind">글로벌네비게이션 영역</h2>
-
-                <ul class="clearfix">
-                    <li>
-                        <h3><a href="javascript:void(0)">About</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Skill</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Project01</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Project02</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Project03</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Project04</a></h3>
-                    </li>
-                    <li>
-                        <h3><a href="javascript:void(0)">Project05</a></h3>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div id="content">
-            <section class="sec_home">
-                <h2 class="blind">Home</h2>
-
-                <img src="img/img_main_view.png" alt="웹퍼블리셔 김아현의 포트폴리오">
-                <a href="#" class="btn_scroll">
-                    <img src="img/ico_scroll.gif" alt="Scroll Down">
-                </a>
-            </section>
-            <section>
-                <h2 class="blind">본문콘텐츠 영역</h2>
-                <section id="sec1" class="sec_about">
-                    <h3>About</h3>
-
-                    <div class="inner clearfix">
-                        <div class="about_left">
-                            <img src="img/img_about.png" alt>
-                            <p>Web Publisher, <strong>Ahyeon Kim.</strong></p>
-                        </div>
-                        <div class="about_right">
-                            <p>안녕하세요 :&#41;</p>
-                            <p>신입 웹 퍼블리셔 <strong>김 아현</strong>입니다.</p>
-                            <p class="txt_info">언제나 즐거운 마음으로 끊임없이 도전하고, <br>열정이 넘치는 퍼블리셔가 되겠습니다.</p>
-
-                            <div class="box_myInfo">
-                                <dl class="list_info1 clearfix">
-                                    <dt>Birth.</dt>
-                                    <dd> 1996.05.04 &#40;23세&#41;</dd>
-                                    <dt>Call.</dt>
-                                    <dd>010. 4507. 2038</dd>
-                                    <dt>Email.</dt>
-                                    <dd>aha9654@gmail.com</dd>
-                                </dl>
-                                <dl class="list_info2 clearfix">
-                                    <dt>2018.02</dt>
-                                    <dd>동양미래대학교 컴퓨터소프트웨어공학과 졸업</dd>
-                                    <dt>2018.05</dt>
-                                    <dd>정보처리산업기사 취득</dd>
-                                    <dt>2018.07</dt>
-                                    <dd>그린컴퓨터아카데미 디지털컨버전스 정규과정 수료</dd>
-                                </dl>
-                            </div>
-
-                            <a href="data/AhyeonKim_Portfolio.pdf" class="btn_resume" target="_blank" title="새창으로 열림">Download Resume ></a>
-                        </div>
-
-                    </div>
-                </section>
-                <section id="sec2" class="sec_skill">
-                    <h3>Skill</h3>
-
-                    <div class="inner clearfix">
-                        <dl>
-                            <dt>Photoshop</dt>
-                            <dd>이미지 누끼따기, 레이아웃 자르기</dd>
-                            <dd>간단한 이미지 보정/수정/합성</dd>
-                        </dl>
-                        <dl>
-                            <dt>HTML</dt>
-                            <dd>웹 접근성과 웹표준을 준수하는 하드코딩</dd>
-                            <dd>시맨틱 태그를 활용한 시맨틱한 아웃라인 구조</dd>
-                        </dl>
-                        <dl>
-                            <dt>CSS</dt>
-                            <dd>미디어쿼리를 이용한 반응형 사이트 제작</dd>
-                            <dd>모바일 전용 사이트 제작 &#40;디바이스별 호환&#41;</dd>
-                        </dl>
-                        <dl>
-                            <dt>JavaScript, JQuery</dt>
-                            <dd>Form 값 유효성 체크</dd>
-                            <dd>탭, 슬라이드 등의 기능 구현 및 플러그인 사용</dd>
-                        </dl>
-                        <dl>
-                            <dt>PHP·JSP &amp; DB</dt>
-                            <dd>DBMS내에서 데이터 조작, <br>WEB에서 불러오기</dd>
-                        </dl>
-                        <dl>
-                            <dt>Git</dt>
-                            <dd>Azure, github등에서 사용한 경험이 있으며<br>기본적인 기능 모두 사용가능합니다.</dd>
-                        </dl>
-                    </div>
-                </section>
-                <section id="sec3" class="sec_prj1">
-                    <h3>Project01<span class="blind"> - </span><span class="subTitle">기업형 홈페이지 제작</span></h3>
-
-                    <div class="inner clearfix">
-                        <div class="prj_left">
-                            <img src="img/img_prj_01.png" alt="미리보기">
-                        </div>
-                        <div class="prj_right">
-                            <dl class="clearfix">
-                                <dt>주제</dt>
-                                <dd>대명건설</dd>
-                                <dt>기간</dt>
-                                <dd>3주</dd>
-                                <dt>스킬</dt>
-                                <dd>HTML5 / CSS3 / JS + JQuery / PHP / MySQL / Ajax / Json</dd>
-                                <dt>설명</dt>
-                                <dd>1000px를 기준으로 작업한 Desktop전용 기업 사이트입니다.</dd>
-                            </dl>
-                            <a href="http://may54ther.cafe24.com/www" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="sec4" class="sec_prj2">
-                    <h3>Project02<span class="blind"> - </span><span class="subTitle">모바일 홈페이지 제작</span></h3>
-
-                    <div class="inner clearfix">
-                        <div class="prj_left">
-                            <img src="img/img_prj_02.png" alt="미리보기">
-                        </div>
-                        <div class="prj_right">
-                            <dl class="clearfix">
-                                <dt>주제</dt>
-                                <dd>대명건설</dd>
-                                <dt>기간</dt>
-                                <dd>1주</dd>
-                                <dt>스킬</dt>
-                                <dd>HTML5 / CSS3 / JS + JQuery / PHP / MySQL / Json</dd>
-                                <dt>설명</dt>
-                                <dd>모바일전용으로 제작한 기업 사이트입니다.</dd>
-                            </dl>
-                            <a href="http://may54ther.cafe24.com/mobile" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="sec5" class="sec_prj3">
-                    <h3>Project03<span class="blind"> - </span><span class="subTitle">반응형 홈페이지 제작</span></h3>
-
-                    <div class="inner clearfix">
-                        <div class="prj_left">
-                            <img src="img/img_prj_03.png" alt="미리보기">
-                        </div>
-                        <div class="prj_right">
-                            <dl class="clearfix">
-                                <dt>주제</dt>
-                                <dd>ELIE SAAB</dd>
-                                <dt>기간</dt>
-                                <dd>1주</dd>
-                                <dt>스킬</dt>
-                                <dd>HTML5 / CSS3 / JQuery</dd>
-                                <dt>설명</dt>
-                                <dd>CSS Media Query를 사용해 만든 반응형 사이트입니다.</dd>
-                            </dl>
-                            <a href="https://may54ther.github.io/media" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="sec6" class="sec_prj4">
-                    <h3>Project04<span class="blind"> - </span><span class="subTitle">워드프레스 홈페이지 제작</span></h3>
-
-                    <div class="inner clearfix">
-                        <div class="prj_left">
-                            <img src="img/img_prj_04.png" alt="미리보기">
-                        </div>
-                        <div class="prj_right">
-                            <dl class="clearfix">
-                                <dt>주제</dt>
-                                <dd>태연 Official</dd>
-                                <dt>기간</dt>
-                                <dd>2일</dd>
-                                <dt>스킬</dt>
-                                <dd>HTML5 / CSS3 / JQuery / CMS(Wordpres)</dd>
-                                <dt>설명</dt>
-                                <dd>Wordpress의 Avata테마를 사용해 만든 반응형 사이트입니다.</dd>
-                            </dl>
-                            <a href="http://may54ther.cafe24.com/wordpress" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                        </div>
-                    </div>
-                </section>
-                <section id="sec7" class="sec_prj5">
-                    <h3>Project05<span class="blind"> - </span><span class="subTitle">기존 홈페이지 Copy Site</span></h3>
-
-                        <div class="inner cabal clearfix">
-                            <div class="prj_left">
-                                <img src="img/img_prj_05.png" alt="미리보기">
-                            </div>
-                            <div class="prj_right">
-                                <dl class="clearfix">
-                                    <dt>주제</dt>
-                                    <dd>카발온라인 &#40;ESTGames&#41;</dd>
-                                    <dt>기간</dt>
-                                    <dd>4일</dd>
-                                    <dt>스킬</dt>
-                                    <dd>HTML5 / CSS3 / JQuery / Json</dd>
-                                    <dt>설명</dt>
-                                    <dd>플러그인을 사용하지 않고 직접 구현하였으며, 기존 div 구조의 사이트를 시맨틱 태그를 사용해 Outline 구조를 고려하여 만들었습니다.</dd>
-                                </dl>
-                                <a href="https://may54ther.github.io/cabal_online" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                            </div>
-                        </div>
-                        <div class="inner event clearfix">
-                            <div class="prj_left">
-                                <img src="img/img_prj_06.png" alt="미리보기">
-                            </div>
-                            <div class="prj_right">
-                                <dl class="clearfix">
-                                    <dt>주제</dt>
-                                    <dd>카발온라인 EVENT</dd>
-                                    <dt>기간</dt>
-                                    <dd>1일</dd>
-                                    <dt>스킬</dt>
-                                    <dd>HTML5 / CSS3 / JQuery</dd>
-                                    <dt>설명</dt>
-                                    <dd>IE7이상의 크로스브라우징에 대응하며, 시맨틱 태그를 사용해 Outline 구조를 고려하여 만들었습니다.</dd>
-                                </dl>
-                                <a href="https://may54ther.github.io/cabal_event" class="btn_visit" target="_blank" title="새창으로 열림">View Website ></a>
-                            </div>
-                        </div>
-                        <ul class="pagination">
-                            <li class="p1 on"><a href="#"><span class="blind">1</span></a></li>
-                            <li class="p2"><a href="#"><span class="blind">2</span></a></li>
-                        </ul>
-                </section>
-            </section>
-        </div>
-    </div>
-</body>
-
+  </body>
 </html>
