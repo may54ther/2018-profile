@@ -123,6 +123,7 @@ section[class*="sec_project"]{height: 646px; padding: 60px 0}
     .content .inner--right dd, .content .inner--right dt{font-size: 16px}
     .content section{font-size: 14px}
     .content .sec_skill dl{float: unset; width: 80%; height:80px; margin: 0 10%}
+    .content .sec_about .inner--about-right p{font-size: 16px}
     .content .sec_about .inner--about-right dl dt{width: 18%}
     .content .sec_about .inner--about-right dl dd{width: 80%}
 }
