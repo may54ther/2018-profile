@@ -1,8 +1,11 @@
 # profile
-개인 포트폴리오 사이트
+- 개인 프로필 사이트
+- [바로가기](https://may54ther.github.io/profile)
+
 ## 특징
-- HTML, CSS, jQuery
+- HTML, CSS, Media-Query, JavaScript, jQuery
 - 반응형 사이트
+
 ## PC
 ![Screenshot](./screenshot/screenshot.jpg)
 
